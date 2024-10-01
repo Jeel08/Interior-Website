@@ -12,7 +12,7 @@ h5 {
 .left-sidebar {
     margin: 0;
     padding: 0;
-    height: 40rem;
+    height: 100%;
     width: 16%;
     background-color: red;
     color: white;
@@ -57,9 +57,7 @@ h5 {
     box-shadow: 0px 0px 5px gray;
     color: black;
 }
-.p-tag-style {
-    padding-left: 10px;
-}
+
 .span-style {
     border-bottom: 1px solid black;
     text-align: center;
@@ -79,6 +77,7 @@ h5 {
     background-color:rgb(248, 241, 241)
 }
 .table-btn-style {
+    justify-content: center;
     padding: 11px;
     margin-top: 1rem;
     margin-left: 13rem;
@@ -111,8 +110,159 @@ h5 {
     color: black;
     cursor: pointer;
 }
+.showcase-img-style {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
 .border-box-style {
     height: 10px;width: 3rem;
     background-color: red;
     border-radius: 5px;
 }
+.common-wid-img-card {
+    width: 20rem;
+}
+.desinger-page-style {
+    display: flex;
+    margin-top: 2rem;
+    gap: 10px;
+}
+.desinger-img-card {
+    height: 15rem;
+    opacity: 0.5;
+}
+.word-break {
+    word-break: break-all;
+}
+.p-tag-style {
+    padding-left: 10px;
+}
+
+@media screen and (max-width:400px) {
+    .right-width {
+        overflow: auto;
+        margin-left: 14em;
+        margin-right: 2rem;
+        width: 30rem;
+        height: 100%
+    }
+    .desinger-img-card {
+        width: 325px;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+
+     .container {
+        overflow: auto;
+    }
+    .text-style {
+        display: none;
+    }
+    .link-anchor {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        float: left;
+        position: fixed;
+    }
+    .links-style {
+        margin-left: 5px;
+        height: 1rem;
+    }
+    .links-style:hover {
+        cursor: pointer;
+        color: black;
+    }
+    .left-sidebar {
+        width: 26.8rem;
+        height: 3rem;
+        padding: 0;
+        margin: 0;
+    }
+    .right-width {
+        width: 25rem;
+        padding-right: 2rem;
+        margin-left: 0%;
+        padding-left: 1rem;
+    }
+    .img-style {
+        width: 25rem;
+        height: 20rem;
+    }
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem 1rem;
+        width: auto;
+    }
+    .showcase-img-style {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .desinger-page-style {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .desinger-img-card {
+        height: 15rem;
+        width: 25rem;
+        opacity: 0.5;
+    }
+    .table-btn-style {
+        margin-left: 3rem;
+    }
+    
+}
+/* Iphone se */
+@media screen and (max-width:600px) {
+
+    .left-sidebar {
+        width: 600px;
+        background-color: red;
+        height: 3rem;
+    }
+    .link-anchor {
+        font-size: 14px;
+    }
+    .right-width {
+        overflow: hidden;
+        width: 325px;
+        padding-right: 2rem;
+        margin-left: 0%;
+        padding-left: 1rem;
+    }
+    .img-style {
+        width: auto;
+        height: 20rem;
+    }
+    .common-wid-img-card {
+        width: 20rem;
+    }
+    /* .desinger-img-card {
+        height: 15rem;
+        width: 295px;
+        opacity: 0.5;
+    } */
+    .table-btn-style {
+        margin-left: 2rem;
+    }
+}
+/* 
+@media screen and (max-width:600px) {
+    .right-width {
+        overflow: auto;
+        margin-right: auto;
+        margin-left: 1rem;
+        width: auto;
+    }
+    .desinger-img-card {
+        width: 300px;
+    }
+    
+} */
+
